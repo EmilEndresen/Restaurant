@@ -4,4 +4,284 @@
 
 body {
     margin: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: ONEDAY;
+    src: url(/fonts/oneday.ttf);
+}
+
+img {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+/* ===================
+      TYPOGRAPHY 
+=====================*/
+
+h1,
+h2,
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    color: antiquewhite;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+    margin-top: -3.2em;
+}
+
+h1,
+h2,
+.btn {
+    font-family: ONEDAY, sans-serif;
+}
+
+.home
+p {
+    color: antiquewhite;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        margin-top: -5em;
+    }
+}
+
+/* ===================
+      GENERAL LAYOUT
+=====================*/
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+@media (min-width: 700px) {
+    .main-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 500px)) minmax(1em, 1fr);
+    }
+}
+
+/* --------------------
+        Buttons
+------------------ */
+
+.btn {
+    color: #000;
+    font-size: 1.4rem;
+    padding: .7em 1.7em;
+    font-weight: 700;
+    justify-self: start;
+    margin-top: .7em;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: black;
+}
+
+
+
+/* ======================
+        NAVIGATION
+======================== */
+
+.header {
+    background: black;
+}
+
+.header-home {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    grid-column: 2 / -2;
+}
+
+.logo-link {
+    background: #000;
+    color: antiquewhite;
+    font-family: ONEDAY, sans-serif;    
+    padding-top: 2em;
+}
+
+.nav {
+    position: fixed;
+    background: #000;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(0);
+    transition: transform 250ms;
+}
+
+.navigation-open {
+    transform: translateX(-100%);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-family: ONEDAY, sans-serif;  
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-transform: capitalize;
+    
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #bdbdbd;
+    
+}
+
+.close-nav {
+    border: 0;
+    background: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: .5em;
+    position: absolute;
+}
+
+.open-nav {
+    border: 0;
+    background: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: .5em;
+    margin-left: auto;
+    font-size: 1.5em;
+}
+
+.current {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+/* ===================
+      WELCOME AREA
+=====================*/
+
+.home {
+    background-image: url(/images/madie-hamilton-2MPSsNRqv9A-unsplash\ \(1\).jpg);
+    background-color: #404040;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 14em 0 8em;
+    text-align: center;
+}
+
+.home > * {
+    grid-column: 2 / -2;
+}
+
+@media (min-width: 700px) {
+    .home {
+        grid-column: 2 / -2;
+        padding: 20em 0 10em
+    }
+    
+}
+
+
+/* ===================
+       ABOUT US
+=====================*/
+
+.about-us {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.about-col {
+    grid-column: 2 / -2;
+}
+
+.about-img {
+    grid-column: 2 / -2;
+    margin-top: 2em;
+}
+
+/* @media (min-width: 700px) {
+    .about-col {
+        grid-column: 2 / span 1;
+    }
+
+    .about-img {
+        grid-column: 3 / span 1;
+    }
+} */
+
+
+/* ===================
+         MENU
+=====================*/
+
+.menu {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.menu-col {
+    grid-column: 2 / span 1;
+}
+
+.menu-img {
+    grid-column: 2 / span 1;
+}
+
+/* @media (min-width: 700px) {
+    .menu-img {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .menu-col {
+        grid-column: 3 / span 1;
+    }
+} */
+
+/* ===================
+         BOOKING
+=====================*/
+
+.book {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.book-col,
+.book-img {
+    grid-column: 2 / span 1;
 }
