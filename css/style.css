@@ -14,6 +14,22 @@ body {
     src: url(/fonts/oneday.ttf);
 }
 
+::-webkit-scrollbar {
+    width: .7em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vh;
+    margin-block: .1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66);
+    border-radius: 100vh;
+    border: .06em solid #fff;
+}
+
 img {
     max-width: 100%;
     margin-top: 2em;
@@ -42,6 +58,25 @@ h2,
     font-family: ONEDAY, sans-serif;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 2px;
+    background: #000;
+    margin-inline: auto;
+    margin-top: .6em;
+}
+
+.logo-link {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 .home
 p {
     color: antiquewhite;
@@ -52,6 +87,13 @@ p {
         margin-top: -5em;
     }
 }
+
+.social {
+    font-size: 2.5rem;
+    color: #000;
+    margin-inline: 0.7em;
+}
+
 
 /* ===================
       GENERAL LAYOUT
@@ -80,12 +122,13 @@ p {
     font-weight: 700;
     justify-self: start;
     margin-top: .7em;
-    border: none;
+    border: 1px solid #404040;
     cursor: pointer;
     transition: .5s;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     color: #fff;
     background-color: black;
 }
@@ -97,11 +140,11 @@ p {
 ======================== */
 
 .header {
-    background: black;
+    background: hsla(0, 0%, 0%, 75%);
 }
 
 .header-home {
-    background: transparent;
+    background: hsla(0, 0%, 0%, 75%);
     position: absolute;
     width: 100%;
 }
@@ -112,15 +155,19 @@ p {
 }
 
 .logo-link {
-    background: #000;
     color: antiquewhite;
     font-family: ONEDAY, sans-serif;    
-    padding-top: 2em;
+    padding: 1em .5em;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    
+
+    
 }
 
 .nav {
     position: fixed;
-    background: #000;
+    background: hsla(0, 0%, 0%, 95%);
     width: 100%;
     top: 0;
     right: 0;
@@ -151,7 +198,7 @@ p {
 .nav-link {
     color: #fff;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-decoration: none;
 }
 
@@ -192,14 +239,13 @@ p {
       WELCOME AREA
 =====================*/
 
-.home {
+.bg-img {
     background-image: url(/images/madie-hamilton-2MPSsNRqv9A-unsplash\ \(1\).jpg);
     background-color: #404040;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     padding: 14em 0 8em;
-    text-align: center;
 }
 
 .home > * {
@@ -220,7 +266,7 @@ p {
 =====================*/
 
 .about-us {
-    padding: 4em 0;
+    padding-top: 2em;
     text-align: center;
 }
 
@@ -231,6 +277,7 @@ p {
 .about-img {
     grid-column: 2 / -2;
     margin-top: 2em;
+    margin-bottom: 0;
 }
 
 /* @media (min-width: 700px) {
@@ -249,7 +296,7 @@ p {
 =====================*/
 
 .menu {
-    padding: 2em 0;
+    padding-top: 2em;
     text-align: center;
 }
 
@@ -277,11 +324,55 @@ p {
 =====================*/
 
 .book {
-    padding: 4em 0;
+    padding-top: 2em;
     text-align: center;
 }
 
 .book-col,
 .book-img {
     grid-column: 2 / span 1;
+}
+
+
+
+/* ===================
+      NEWSLETTER
+=====================*/
+
+.newsletter {
+    border: 2px solid #000;
+    grid-column: 2 / span 1;
+    padding: 3em 2em;
+    margin-block: 5em;
+}
+
+.news-text {
+    grid-column: 2 / span 1;
+    margin-top: -2em;
+}
+
+.form {
+    grid-column: 2 / span 1;
+}
+
+input {
+    font-family: ONEDAY, sans-serif;
+    font-weight: 700;
+    padding: 1.2em;
+    margin-bottom: .8em;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/* ===================
+         FOOTER
+=====================*/
+
+footer {
+    background-color: #dddddd;
+    padding: 2em 0;
+    text-align: center;
 }
