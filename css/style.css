@@ -25,7 +25,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(44, 44, 44);
     border-radius: 100vh;
     border: .06em solid #fff;
 }
@@ -116,7 +116,7 @@ p {
 ------------------ */
 
 .btn {
-    color: #000;
+    color: rgb(44, 44, 44);
     font-size: 1.4rem;
     padding: .7em 1.7em;
     font-weight: 700;
@@ -130,7 +130,7 @@ p {
 .btn:hover,
 .btn:focus {
     color: #fff;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
 }
 
 
