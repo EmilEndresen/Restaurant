@@ -33,6 +33,7 @@ body {
 img {
     max-width: 100%;
     margin-top: 2em;
+    object-fit: cover;
 }
 
 /* ===================
@@ -70,6 +71,19 @@ h2 {
     background: #000;
     margin-inline: auto;
     margin-top: .6em;
+}
+
+@media (min-width: 700px) {
+    
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 2px;
+        background: #000;
+        margin-top: .3em;
+        margin-left: 0; 
+    }
 }
 
 .logo-link {
@@ -122,6 +136,7 @@ p {
     font-weight: 700;
     justify-self: start;
     margin-top: .7em;
+    margin-bottom: 1em;
     border: 1px solid #404040;
     cursor: pointer;
     transition: .5s;
@@ -167,8 +182,8 @@ p {
 
 .nav {
     position: fixed;
-    background: hsla(0, 0%, 0%, 95%);
-    width: 100%;
+    background: hsla(0, 0%, 0%, 98%);
+    width: 60%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -233,6 +248,36 @@ p {
     border-bottom: 2px solid #fff;
 }
 
+@media (min-width: 700px) {
+    .open-nav,
+    .close-nav {
+        display: none;
+    }
+
+    .header-home .nav {
+        background: transparent;
+    }
+
+    .nav {
+        position: initial;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-item {
+        margin-left: 2em;
+        text-transform: capitalize;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+
 
 
 /* ===================
@@ -248,13 +293,11 @@ p {
     padding: 14em 0 8em;
 }
 
-.home > * {
-    grid-column: 2 / -2;
-}
+
 
 @media (min-width: 700px) {
-    .home {
-        grid-column: 2 / -2;
+    .bg-img {
+        height: 90vh;
         padding: 20em 0 10em
     }
     
@@ -280,15 +323,19 @@ p {
     margin-bottom: 0;
 }
 
-/* @media (min-width: 700px) {
+@media (min-width: 700px) {
     .about-col {
-        grid-column: 2 / span 1;
+        grid-column: 2 /-3;
+        margin-top: 2em;
+        padding-right: 2em;
+        text-align: left;
     }
 
     .about-img {
-        grid-column: 3 / span 1;
+        grid-column: 3 / -2;
     }
-} */
+   
+}
 
 
 /* ===================
@@ -306,18 +353,26 @@ p {
 
 .menu-img {
     grid-column: 2 / span 1;
+    
 }
 
-/* @media (min-width: 700px) {
+@media (min-width: 700px) {
+    
+    .menu {
+        margin-top: 2em;
+    }
+    
     .menu-img {
-        grid-column: 2 / span 1;
-        grid-row: 2 / span 1;
+        grid-column: 2 / -3;
+        grid-row: 1 / 1;
     }
     
     .menu-col {
-        grid-column: 3 / span 1;
+        grid-column: 3 / -2;
+        text-align: left;
+        padding-left: 2em;
     }
-} */
+}
 
 /* ===================
          BOOKING
@@ -331,6 +386,24 @@ p {
 .book-col,
 .book-img {
     grid-column: 2 / span 1;
+}
+
+@media (min-width: 700px) {
+    
+    .book {
+        margin-top: 2em;
+    }
+    
+    .book-col {
+        grid-column: 2 / -3;
+        grid-row: 1 / 1;
+        text-align: left;
+    }
+    
+    .book-img {
+        grid-column: 3 / -2;
+        padding-left: 2em;
+    }
 }
 
 
@@ -361,6 +434,27 @@ input {
     padding: 1.2em;
     margin-bottom: .8em;
     font-size: 1.2rem;
+    max-width: 100%;
+}
+
+
+@media (min-width: 700px) {
+    .newsletter {
+        grid-column: 2 / span 2;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 500px)) minmax(1em, 1fr);
+    }
+
+    .news-form {
+        grid-column: 3 / -2;
+    }
+
+    .news-text {
+        grid-column: 2 / -3;
+    }
 }
 
 
@@ -375,4 +469,5 @@ footer {
     background-color: #dddddd;
     padding: 2em 0;
     text-align: center;
+    color: hsla(0, 0%, 0%, 60%);
 }
