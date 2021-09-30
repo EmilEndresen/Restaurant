@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: ONEDAY;
+    src: url(/fonts/oneday.ttf);
+}
+
+::-webkit-scrollbar {
+    width: .7em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vh;
+    margin-block: .1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(44, 44, 44);
+    border-radius: 100vh;
+    border: .06em solid #fff;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 2em;
+    object-fit: cover;
+}
+
+/* ===================
+      TYPOGRAPHY 
+=====================*/
+
+h1,
+h2,
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    color: #000;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 20%;
+    background: #000;
+}
+
+h1,
+h2,
+.btn {
+    font-family: ONEDAY, sans-serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 2px;
+    background: #000;
+    margin-inline: auto;
+    margin-top: .6em;
+}
+
+@media (min-width: 700px) {
+    
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 2px;
+        background: #000;
+        margin-top: .3em;
+        margin-left: 0; 
+    }
+}
+
+.logo-link {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.home
+p {
+    color: antiquewhite;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 5rem;
+        color: antiquewhite;
+        text-align: center;
+        margin-top: -2em;
+    }
+}
+
+.social {
+    font-size: 2.5rem;
+    color: #000;
+    margin-inline: 0.7em;
+}
+
+
+/* ===================
+      GENERAL LAYOUT
+=====================*/
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+@media (min-width: 700px) {
+    .main-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 500px)) minmax(1em, 1fr);
+    }
+}
+
+
+/* ======================
+        NAVIGATION
+======================== */
+
+.header {
+    background: hsla(0, 0%, 0%, 75%);
+}
+
+.header-home {
+    background: hsla(0, 0%, 0%, 75%);
+    position: absolute;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    grid-column: 2 / -2;
+}
+
+.logo-link {
+    color: antiquewhite;
+    font-family: ONEDAY, sans-serif;    
+    padding: 1em .5em;
+    text-decoration: none;
+    letter-spacing: .3rem;
+}
+
+.nav {
+    position: fixed;
+    background: hsla(0, 0%, 0%, 98%);
+    width: 60%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(0);
+    transition: transform 250ms;
+}
+
+.navigation-open {
+    transform: translateX(-100%);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-family: ONEDAY, sans-serif;  
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-transform: capitalize;   
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #bdbdbd;
+    
+}
+
+.close-nav {
+    border: 0;
+    background: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: .5em;
+    position: absolute;
+}
+
+.open-nav {
+    border: 0;
+    background: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: .5em;
+    margin-left: auto;
+    font-size: 1.5em;
+}
+
+.current {
+    border-bottom: 2px solid #fff;
+}
+
+@media (min-width: 700px) {
+    .open-nav,
+    .close-nav {
+        display: none;
+    }
+
+    .logo-link {
+        margin-left: 5em;
+    }
+
+    .header-home .nav {
+        background: transparent;
+    }
+
+    .nav {
+        position: initial;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-item {
+        margin-left: 2em;
+        text-transform: capitalize;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+
+/* ===================
+      WELCOME AREA
+=====================*/
+
+.bg-img {
+    background-image: url(/images/mario-garcia-NOWXEIETGAQ-unsplash.jpg);
+    background-color: #404040;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding: 14em 0 8em;
+}
+
+@media (min-width: 700px) {
+    .bg-img {
+        height: 70vh;
+        padding: 20em 0 10em
+    }
+    
+}
+
+/* ===================
+         MAIN TEXT
+=====================*/
+
+.main-text * {
+    grid-column: 2 / -2;
+}
+
+.main-text {
+    margin-bottom: 5em;
+}
+
+
+
+
+
+/* ===================
+         FOOTER
+=====================*/
+
+footer {
+    background-color: #dddddd;
+    padding: 2em 0;
+    text-align: center;
+    color: hsla(0, 0%, 0%, 60%);
+}
+
+
