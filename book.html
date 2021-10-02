@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e9c97e63d2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/book.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -20,7 +20,6 @@
             </a>
             <button aria-label="open navigation" class="open-nav">&#9776;</button>
 
-
             <nav class="nav">
                 <button aria-label="close navigation" class="close-nav">&times;</button>
                 <ul class="nav-list">
@@ -34,23 +33,72 @@
     </header>
     
    
-        
     <main>
-        
+
+        <section class="bg-img">
+            
+        </section>
+
+        <section class="main-grid book-text">
+            
+            <h1>Reservations</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime animi exercitationem, 
+                cum consectetur est ipsam sequi ex eveniet aliquam, consequatur perferendis saepe repudiandae, 
+                qui reiciendis. Labore enim vel pariatur nesciunt autem cupiditate incidunt accusamus, itaque perspiciatis, 
+                suscipit asperiores earum dolorum blanditiis exercitationem consequuntur commodi doloribus iusto numquam. 
+                Incidunt, reiciendis at?
+            </p>
+            <p>
+                <strong>Reservations must be made at least a day in advance.</strong> 
+            </p>
+        </section>
+
+        <section class="reservation-form">
+            <form class="form main-grid">
+                <input type="date" name="date" id="date" 
+                        value="2021-10-01" min="2021-10-02" required>
+                <input type="time" name="time" id="time" 
+                        value="11:00" min="11:00" max="22:00" required>
+                <select name="people" id="people" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="text" name="fname" id="fname" placeholder="First name" required>
+                <input type="text" name="lname" id="lname" placeholder="Last name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="tel" id="tel" placeholder="Phone number" required>
+                <button id="book-btn">Submit</button>
+            </form>
+        </section>
     </main>
 
-    <footer>
-        <h2 class="footer-logo main">
-            Emil's<br> 
-            steakhouse
-        </h2>
-        <p>
-            © 2021 No vegans allowed
-        </p>
-        <a class="facebook social" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        <a class="twitter social" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-        <a class="instagram social" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
-    </footer>
+    <footer class="main-grid">
+        <div class="footer-text">
+            <h2 class="footer-logo main ">
+                Emil's<br>
+                steakhouse
+            </h2>
+            <p>
+                © 2021 No vegans allowed
+            </p>
+        </div> 
+        <div class="footer-social">
+            <a class="facebook social" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a class="twitter social" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a class="instagram social" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        </footer>
 
     <script src="script.js"></script>
 </body>

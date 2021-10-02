@@ -53,7 +53,7 @@
                     quisquam molestiae commodi porro inventore nihil dolores veniam magni assumenda quas quasi ad
                     ipsum.
                 </p>
-                <button class="btn about-btn">More info</button>
+                <button onclick="document.location='about.html'" class="btn about-btn">More info</button>
             </div>
             <div class="about-img">
                 <img class="about-img" src="/images/madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" alt="A man cutting meat">
@@ -65,7 +65,7 @@
                 <h2 class="section-title menu-title">Our Menu</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, non?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, laudantium.</p>
-                <button class="btn menu-btn">View Menu</button>
+                <button onclick="document.location='menu.html'" class="btn menu-btn">View Menu</button>
             </div>
             <div class="menu-img">
                 <img src="/images/andres-rodriguez-So4EHYeShUM-unsplash.jpg" alt="A plate with meat">
@@ -82,7 +82,7 @@
                 <p>
                     <strong>Reservations must be made one day in advance</strong>
                 </p>
-                <button class="btn main-btn">Book table</button>
+                <button onclick="document.location='book.html'" class="btn main-btn">Book table</button>
             </div>
             <div class="book-img">
                 <img src="/images/samuel-foster-LxD9fZYR2uw-unsplash.jpg" alt="A reserved table in a restaurant">
@@ -92,7 +92,7 @@
         <section class="main-grid">
             <div class="newsletter  news-grid">
                 <div class="news-text">
-                    <h2>newsletter</h2>
+                    <h3>newsletter</h3>
                     <p>Sign up to our newsletter for the latest news and offers</p>
                 </div>
 
@@ -101,7 +101,7 @@
                         <input type="text" id="fname" name="fname" placeholder="First name:"><br>
                         <input type="text" id="lname" name="lname" placeholder="Last name:"><br>
                         <input type="email" id="email" placeholder="Email"><br>
-                        <button class="form btn btn-form">Submit</button>
+                        <button class="form btn form-btn">Submit</button>
                     </form>
                 </div>
 
@@ -112,18 +112,22 @@
         </section>
     </main>
 
-    <footer>
-        <h2 class="footer-logo main">
-            Emil's<br>
-            steakhouse
-        </h2>
-        <p>
-            © 2021 No vegans allowed
-        </p>
-        <a class="facebook social" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        <a class="twitter social" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-        <a class="instagram social" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
-    </footer>
+    <footer class="main-grid">
+        <div class="footer-text">
+            <h2 class="footer-logo main ">
+                Emil's<br>
+                steakhouse
+            </h2>
+            <p>
+                © 2021 No vegans allowed
+            </p>
+        </div> 
+        <div class="footer-social">
+            <a class="facebook social" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a class="twitter social" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a class="instagram social" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        </footer>
 
     <script src="script.js"></script>
 </body>
