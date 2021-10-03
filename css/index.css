@@ -177,14 +177,11 @@ p {
 }
 
 .logo-link {
-    color: antiquewhite;
+    color: #fff;
     font-family: ONEDAY, sans-serif;    
     padding: 1em .5em;
     text-decoration: none;
     letter-spacing: .3rem;
-    
-
-    
 }
 
 .nav {
@@ -295,7 +292,7 @@ p {
     background-color: #404040;
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 50vh;
     padding: 14em 0 8em;
 }
 
@@ -303,8 +300,8 @@ p {
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 90vh;
-        padding: 20em 0 10em
+        height: 60vh;
+        /* padding: 20em 0 10em */
     }
     
 }

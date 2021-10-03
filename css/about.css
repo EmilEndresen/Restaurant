@@ -162,7 +162,7 @@ p {
 }
 
 .logo-link {
-    color: antiquewhite;
+    color: #fff;
     font-family: ONEDAY, sans-serif;    
     padding: 1em .5em;
     text-decoration: none;
@@ -195,7 +195,8 @@ p {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    text-transform: capitalize;   
+    text-transform: capitalize;
+    
 }
 
 .nav-link {
@@ -203,6 +204,7 @@ p {
     font-weight: 700;
     font-size: 1.8rem;
     text-decoration: none;
+    padding: 0;
 }
 
 .nav-link:hover,
@@ -242,10 +244,6 @@ p {
         display: none;
     }
 
-    .logo-link {
-        margin-left: 5em;
-    }
-
     .header-home .nav {
         background: transparent;
     }
@@ -280,13 +278,13 @@ p {
     background-size: cover;
     background-position: center;
     height: 50vh;
-    padding: 14em 0 8em;
 }
+
+
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 70vh;
-        padding: 20em 0 10em
+        height: 60vh;
     }
     
 }

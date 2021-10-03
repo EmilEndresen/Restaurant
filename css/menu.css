@@ -47,27 +47,27 @@ strong {
 }
 
 h1 {
-    color: #000;
+    color: antiquewhite;
     letter-spacing: .3rem;
     font-size: 3rem;
-}
-
-h1::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 20%;
-    background: #000;
+    margin-top: -3.2em;
 }
 
 h1,
 h2,
 .btn {
     font-family: ONEDAY, sans-serif;
+    letter-spacing: .2rem
 }
 
 h2 {
     font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-family: ONEDAY, sans-serif;
+    letter-spacing: .2rem;
 }
 
 .section-title::after {
@@ -105,19 +105,9 @@ p {
 
 @media (min-width: 700px) {
     h1 {
-        font-size: 4.7rem;
-        color: #000;
-        text-align: left;
-        margin-top: .8em;
+        margin-top: -5em;
     }
 }
-
-@media (max-width: 400px) {
-    h1 {
-        font-size: 2rem;
-    }
-}
-
 
 .social {
     font-size: 2.5rem;
@@ -142,11 +132,34 @@ p {
     }
 }
 
+/* --------------------
+        Buttons
+------------------ */
+
+.btn {
+    color: rgb(44, 44, 44);
+    font-size: 1.4rem;
+    padding: .7em 1.7em;
+    font-weight: 700;
+    justify-self: start;
+    margin-top: .7em;
+    margin-bottom: 1em;
+    border: 1px solid #404040;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background-color: rgb(44, 44, 44);
+}
+
+
 
 /* ======================
         NAVIGATION
 ======================== */
-
 
 .header {
     background: hsla(0, 0%, 0%, 75%);
@@ -280,6 +293,7 @@ p {
     background-size: cover;
     background-position: center;
     height: 50vh;
+    padding: 14em 0 8em;
 }
 
 
@@ -287,19 +301,11 @@ p {
 @media (min-width: 700px) {
     .bg-img {
         height: 60vh;
+        /* padding: 20em 0 10em */
     }
+    
 }
 
-
-
-/* ===================
-         FOOTER
-=====================*/
-
-
-.book-text * {
-    grid-column: 2 / -2;
-}
 
 
 
@@ -342,72 +348,3 @@ footer {
         margin-top: 2em;
     }
 }
-
-/* ===================
-         FORM
-=====================*/
-
-.form {
-    grid-column: 2 / -2;
-    margin-block: 2em;
-}
-
-input,
-select,
-button {
-    font-family: ONEDAY, sans-serif;
-    font-weight: 700;
-    padding: 1.2em;
-    margin-bottom: .8em;
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 100%;
-}
-
-#time {
-    grid-column: 2 / -2;
-    grid-row: 1;
-}
-
-#date {
-    grid-column: 2 / -2;
-    grid-row: 2;
-}
-
-#people {
-    grid-column: 2 / -2;
-    grid-row: 3;
-}
-
-#fname {
-    grid-column: 2 / -2;
-    grid-row: 4;
-}
-
-#lname {
-    grid-column: 2 / -2;
-    grid-row: 5;
-}
-
-#email {
-    grid-column: 2 / -2;
-    grid-row: 6;
-}
-
-#tel {
-    grid-column: 2 / -2;
-    grid-row: 6;
-}
-
-#book-btn {
-    grid-column: 2 / -2;
-    grid-row: 7;
-    transition: .5s;
-}
-
-#book-btn:hover,
-#book-btn:focus {
-    color: #fff;
-    background-color: rgb(44, 44, 44);
-}
-
