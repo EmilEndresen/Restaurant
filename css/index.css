@@ -47,9 +47,9 @@ strong {
 }
 
 h1 {
-    color: antiquewhite;
+    color: #fff;
     letter-spacing: .3rem;
-    font-size: 3rem;
+    font-size: 1.3rem;
     margin-top: -3.2em;
 }
 
@@ -96,11 +96,6 @@ h3 {
 .logo-link {
     font-size: 1.3rem;
     font-weight: 700;
-}
-
-.home
-p {
-    color: antiquewhite;
 }
 
 @media (min-width: 700px) {

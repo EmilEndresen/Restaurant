@@ -39,9 +39,9 @@
             
         </section>
 
-        <section class="main-grid book-text">
+        <section id="Main-Text" class="main-grid main-text">
             
-            <h1>Reservations</h1>
+            <h1 class="section-title">Reservations</h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime animi exercitationem, 
                 cum consectetur est ipsam sequi ex eveniet aliquam, consequatur perferendis saepe repudiandae, 
@@ -55,11 +55,13 @@
         </section>
 
         <section class="reservation-form">
-            <form class="form main-grid">
+            <form id="Email-Collector" class="form main-grid" action="#" method="POST">
                 <input type="date" name="date" id="date" 
                         value="2021-10-01" min="2021-10-02" required>
+
                 <input type="time" name="time" id="time" 
                         value="11:00" min="11:00" max="22:00" required>
+
                 <select name="people" id="people" required>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -74,6 +76,7 @@
                     <option value="11">11</option>
                     <option value="12">12</option>
                 </select>
+
                 <input type="text" name="fname" id="fname" placeholder="First name" required>
                 <input type="text" name="lname" id="lname" placeholder="Last name" required>
                 <input type="email" name="email" id="email" placeholder="Email" required>

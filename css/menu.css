@@ -47,10 +47,9 @@ strong {
 }
 
 h1 {
-    color: antiquewhite;
+    color: #000;
     letter-spacing: .3rem;
     font-size: 3rem;
-    margin-top: -3.2em;
 }
 
 h1,
@@ -61,22 +60,22 @@ h2,
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 1.8rem;
-    font-family: ONEDAY, sans-serif;
-    letter-spacing: .2rem;
+   font-size:  1.5rem;
+   margin-top: 2em;
+   margin-bottom: .5em;
 }
 
 .section-title::after {
     content: "";
     display: block;
-    width: 35%;
+    width: 30%;
     height: 2px;
     background: #000;
-    margin-inline: auto;
+    margin-right: auto;
     margin-top: .6em;
 }
 
@@ -85,7 +84,7 @@ h3 {
     .section-title::after {
         content: "";
         display: block;
-        width: 30%;
+        width: 10%;
         height: 2px;
         background: #000;
         margin-top: .3em;
@@ -96,11 +95,6 @@ h3 {
 .logo-link {
     font-size: 1.3rem;
     font-weight: 700;
-}
-
-.home
-p {
-    color: antiquewhite;
 }
 
 @media (min-width: 700px) {
@@ -283,6 +277,7 @@ p {
 }
 
 
+
 /* ===================
       WELCOME AREA
 =====================*/
@@ -293,7 +288,6 @@ p {
     background-size: cover;
     background-position: center;
     height: 50vh;
-    padding: 14em 0 8em;
 }
 
 
@@ -301,12 +295,26 @@ p {
 @media (min-width: 700px) {
     .bg-img {
         height: 60vh;
-        /* padding: 20em 0 10em */
     }
     
 }
 
+/* ===================
+         MENU
+=====================*/
 
+.starters * {
+    grid-column: 2 / -2;
+}
+
+
+.main-course * {
+    grid-column: 2 / -2;
+}
+
+.sides * {
+    grid-column: 2 / -2;
+}
 
 
 /* ===================
@@ -316,8 +324,10 @@ p {
 footer {
     background-color: #dddddd;
     padding: 1em 0 2em 0;
+    margin-top: 5em;
     text-align: center;
     color: hsla(0, 0%, 0%, 60%);
+
 }
 
 .footer-text {
@@ -348,3 +358,6 @@ footer {
         margin-top: 2em;
     }
 }
+
+
+

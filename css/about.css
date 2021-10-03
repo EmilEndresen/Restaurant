@@ -49,34 +49,33 @@ strong {
 h1 {
     color: #000;
     letter-spacing: .3rem;
-    font-size: 2.5rem;
-}
-
-h1::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 20%;
-    background: #000;
+    font-size: 3rem;
 }
 
 h1,
 h2,
 .btn {
     font-family: ONEDAY, sans-serif;
+    letter-spacing: .2rem
 }
 
 h2 {
     font-size: 2.4rem;
 }
 
+h3 {
+    font-size: 1.8rem;
+    font-family: ONEDAY, sans-serif;
+    letter-spacing: .2rem;
+}
+
 .section-title::after {
     content: "";
     display: block;
-    width: 35%;
+    width: 30%;
     height: 2px;
     background: #000;
-    margin-inline: auto;
+    margin-right: auto;
     margin-top: .6em;
 }
 
@@ -85,7 +84,7 @@ h2 {
     .section-title::after {
         content: "";
         display: block;
-        width: 30%;
+        width: 10%;
         height: 2px;
         background: #000;
         margin-top: .3em;
@@ -105,16 +104,7 @@ p {
 
 @media (min-width: 700px) {
     h1 {
-        font-size: 4.7rem;
-        color: #000;
-        text-align: left;
-        margin-top: .8em;
-    }
-}
-
-@media (max-width: 330px) {
-    h1 {
-        font-size: 2rem;
+        margin-top: -5em;
     }
 }
 
@@ -140,6 +130,30 @@ p {
         grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 500px)) minmax(1em, 1fr);
     }
 }
+
+/* --------------------
+        Buttons
+------------------ */
+
+.btn {
+    color: rgb(44, 44, 44);
+    font-size: 1.4rem;
+    padding: .7em 1.7em;
+    font-weight: 700;
+    justify-self: start;
+    margin-top: .7em;
+    margin-bottom: 1em;
+    border: 1px solid #404040;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background-color: rgb(44, 44, 44);
+}
+
 
 
 /* ======================
@@ -268,6 +282,7 @@ p {
 }
 
 
+
 /* ===================
       WELCOME AREA
 =====================*/
@@ -297,8 +312,12 @@ p {
     grid-column: 2 / -2;
 }
 
-.main-text {
-    margin-bottom: 5em;
+.main-text > * {
+    margin-top: 2em;
+}
+
+.main-text:last-child{
+    margin-bottom: 8em;
 }
 
 

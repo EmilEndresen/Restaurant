@@ -49,34 +49,33 @@ strong {
 h1 {
     color: #000;
     letter-spacing: .3rem;
-    font-size: 3rem;
-}
-
-h1::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 20%;
-    background: #000;
-}
-
-h1,
-h2,
-.btn {
-    font-family: ONEDAY, sans-serif;
+    font-size: 2.4rem;
 }
 
 h2 {
     font-size: 2.4rem;
 }
 
+h1,
+h2,
+.btn {
+    font-family: ONEDAY, sans-serif;
+    letter-spacing: .2rem
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
+
 .section-title::after {
     content: "";
     display: block;
-    width: 35%;
+    width: 30%;
     height: 2px;
     background: #000;
-    margin-inline: auto;
+    margin-right: auto;
     margin-top: .6em;
 }
 
@@ -85,7 +84,7 @@ h2 {
     .section-title::after {
         content: "";
         display: block;
-        width: 30%;
+        width: 10%;
         height: 2px;
         background: #000;
         margin-top: .3em;
@@ -98,26 +97,11 @@ h2 {
     font-weight: 700;
 }
 
-.home
-p {
-    color: antiquewhite;
-}
-
 @media (min-width: 700px) {
     h1 {
-        font-size: 4.7rem;
-        color: #000;
-        text-align: left;
-        margin-top: .8em;
+        margin-top: -5em;
     }
 }
-
-@media (max-width: 400px) {
-    h1 {
-        font-size: 2rem;
-    }
-}
-
 
 .social {
     font-size: 2.5rem;
@@ -142,11 +126,34 @@ p {
     }
 }
 
+/* --------------------
+        Buttons
+------------------ */
+
+.btn {
+    color: rgb(44, 44, 44);
+    font-size: 1.4rem;
+    padding: .7em 1.7em;
+    font-weight: 700;
+    justify-self: start;
+    margin-top: .7em;
+    margin-bottom: 1em;
+    border: 1px solid #404040;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background-color: rgb(44, 44, 44);
+}
+
+
 
 /* ======================
         NAVIGATION
 ======================== */
-
 
 .header {
     background: hsla(0, 0%, 0%, 75%);
@@ -270,12 +277,13 @@ p {
 }
 
 
+
 /* ===================
       WELCOME AREA
 =====================*/
 
 .bg-img {
-    background-image: url(/images/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg);
+    background-image: url(/images/samuel-foster-LxD9fZYR2uw-unsplash.jpg);
     background-color: #404040;
     background-size: cover;
     background-position: center;
@@ -288,60 +296,26 @@ p {
     .bg-img {
         height: 60vh;
     }
+    
 }
-
-
 
 /* ===================
-         FOOTER
+         MAIN TEXT
 =====================*/
 
-
-.book-text * {
+.main-text * {
     grid-column: 2 / -2;
 }
 
-
-
-/* ===================
-         FOOTER
-=====================*/
-
-footer {
-    background-color: #dddddd;
-    padding: 1em 0 2em 0;
-    text-align: center;
-    color: hsla(0, 0%, 0%, 60%);
+.main-text > * {
+    margin-top: 2em;
 }
 
-.footer-text {
-    grid-column: 2 / -2;
-}
-
-.footer-social {
-    grid-column: 2 / -2;
+.main-text:last-child{
+    margin-bottom: 8em;
 }
 
 
-@media (min-width: 700px) {
-
-    footer {
-        text-align: left;
-    }
-
-    .footer-text {
-        margin-left: 2em;
-        grid-column: 2 / -3;
-        grid-row: 1;
-    }
-
-    .footer-social {
-        margin-left: auto;
-        grid-column: 3 / -2;
-        grid-row: 1;
-        margin-top: 2em;
-    }
-}
 
 /* ===================
          FORM
@@ -349,7 +323,11 @@ footer {
 
 .form {
     grid-column: 2 / -2;
-    margin-block: 2em;
+    margin-block: 3em;
+}
+
+.form:last-child {
+    margin-bottom: 6em;
 }
 
 input,
@@ -396,12 +374,12 @@ button {
 
 #tel {
     grid-column: 2 / -2;
-    grid-row: 6;
+    grid-row: 7;
 }
 
 #book-btn {
     grid-column: 2 / -2;
-    grid-row: 7;
+    grid-row: 8;
     transition: .5s;
 }
 
@@ -410,4 +388,49 @@ button {
     color: #fff;
     background-color: rgb(44, 44, 44);
 }
+
+
+
+
+/* ===================
+         FOOTER
+=====================*/
+
+footer {
+    background-color: #dddddd;
+    padding: 1em 0 2em 0;
+    text-align: center;
+    color: hsla(0, 0%, 0%, 60%);
+}
+
+.footer-text {
+    grid-column: 2 / -2;
+}
+
+.footer-social {
+    grid-column: 2 / -2;
+}
+
+
+@media (min-width: 700px) {
+
+    footer {
+        text-align: left;
+    }
+
+    .footer-text {
+        margin-left: 2em;
+        grid-column: 2 / -3;
+        grid-row: 1;
+    }
+
+    .footer-social {
+        margin-left: auto;
+        grid-column: 3 / -2;
+        grid-row: 1;
+        margin-top: 2em;
+    }
+}
+
+
 
