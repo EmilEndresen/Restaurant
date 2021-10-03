@@ -66,7 +66,12 @@ h2 {
 h3 {
    font-size:  1.5rem;
    margin-top: 2em;
-   margin-bottom: .5em;
+   margin-bottom: .4em;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 0;
 }
 
 .section-title::after {
