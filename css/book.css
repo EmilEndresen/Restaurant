@@ -294,7 +294,7 @@ p {
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 60vh;
+        height: 80vh;
     }
     
 }
@@ -311,10 +311,6 @@ p {
     margin-top: 2em;
 }
 
-.main-text:last-child{
-    margin-bottom: 8em;
-}
-
 
 
 /* ===================
@@ -323,7 +319,7 @@ p {
 
 .form {
     grid-column: 2 / -2;
-    margin-block: 3em;
+    gap: 1em;
 }
 
 .form:last-child {
@@ -389,6 +385,53 @@ button {
     background-color: rgb(44, 44, 44);
 }
 
+
+@media (min-width: 700px) {
+    form {
+        margin-top: 4em;
+    }
+    
+    #time {
+        grid-column: 2 / -3;
+        grid-row: 2;
+    }
+    
+    #date {
+        grid-column: 3 / -2;
+        grid-row: 2;
+    }
+    
+    #people {
+        grid-column: 2 / -3;
+        grid-row: 3;
+    }
+    
+    #fname {
+        grid-column: 2 / -3;
+        grid-row: 1;
+    }
+    
+    #lname {
+        grid-column: 3 / -2;
+        grid-row: 1;
+    }
+    
+    #email {
+        grid-column: 3 / -2;
+        grid-row: 3;
+    }
+    
+    #tel {
+        grid-column: 2 / -3;
+        grid-row: 4;
+    }
+    
+    #book-btn {
+        grid-column: 3 / -2;
+        grid-row: 4;
+        transition: .5s;
+    }
+}
 
 
 

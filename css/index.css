@@ -299,8 +299,7 @@ p {
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 60vh;
-        /* padding: 20em 0 10em */
+        height: 80vh;
     }
     
 }
