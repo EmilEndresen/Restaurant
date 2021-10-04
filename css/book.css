@@ -286,7 +286,7 @@ p {
     background-image: url(/images/samuel-foster-LxD9fZYR2uw-unsplash.jpg);
     background-color: #404040;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     height: 50vh;
 }
 
@@ -294,7 +294,7 @@ p {
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 80vh;
+        height: 90vh;
     }
     
 }

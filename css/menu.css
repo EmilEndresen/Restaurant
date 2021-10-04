@@ -299,7 +299,7 @@ p {
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 80vh;
+        height: 90vh;
     }
     
 }
@@ -308,17 +308,54 @@ p {
          MENU
 =====================*/
 
-.starters * {
+.starters {
     grid-column: 2 / -2;
 }
 
 
-.main-course * {
+.main-course {
     grid-column: 2 / -2;
 }
 
-.sides * {
+.sides {
     grid-column: 2 / -2;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+@media (min-width: 700px) {
+
+    .main-grid {
+        column-gap: 1.3em;
+    }
+
+    .starters {
+        grid-column: 2 / -3;
+        grid-row: 1;
+    }
+
+    .main-course {
+        grid-column: 3 / -2;
+        grid-row: 1;
+    }
+
+    .sides {
+        grid-column: 2 / -3;
+        grid-row: 2;
+    }
+
+    .drinks {
+        grid-column: 3 / -2;
+        grid-row: 2;
+    }
+
 }
 
 
@@ -363,6 +400,4 @@ footer {
         margin-top: 2em;
     }
 }
-
-
 

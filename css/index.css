@@ -299,7 +299,7 @@ p {
 
 @media (min-width: 700px) {
     .bg-img {
-        height: 80vh;
+        height: 90vh;
     }
     
 }
@@ -462,9 +462,6 @@ input {
         grid-column: 2 / -3;
     }
 }
-
-
-
 
 
 /* ===================
