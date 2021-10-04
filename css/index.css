@@ -46,13 +46,6 @@ strong {
     font-weight: 700;
 }
 
-h1 {
-    color: #fff;
-    letter-spacing: .3rem;
-    font-size: 1.3rem;
-    margin-top: -3.2em;
-}
-
 h1,
 h2,
 .btn {
@@ -100,12 +93,6 @@ p {
 .logo-link {
     font-size: 1.3rem;
     font-weight: 700;
-}
-
-@media (min-width: 700px) {
-    h1 {
-        margin-top: -5em;
-    }
 }
 
 .social {
