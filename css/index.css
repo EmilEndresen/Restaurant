@@ -34,6 +34,7 @@ img {
    max-width: 100%;
    margin-top: 2em;
    object-fit: cover;
+   border-radius: 5px;
 }
 
 /* ===================
@@ -131,6 +132,8 @@ p {
    margin-top: 0.7em;
    margin-bottom: 1em;
    border: 1px solid #404040;
+
+   border-radius: 5px;
    cursor: pointer;
    transition: 0.5s;
 }
@@ -386,6 +389,8 @@ p {
 
 .newsletter {
    border: 2px solid #000;
+
+   border-radius: 5px;
    grid-column: 2 / span 1;
    padding: 3em 2em;
    margin-block: 5em;
@@ -411,6 +416,9 @@ input {
    margin-bottom: 0.8em;
    font-size: 1.2rem;
    max-width: 100%;
+   border: 1px gray solid;
+
+   border-radius: 5px;
 }
 
 @media (min-width: 700px) {
