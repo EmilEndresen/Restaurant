@@ -11,7 +11,7 @@ body {
 
 @font-face {
    font-family: ONEDAY;
-   src: url(/fonts/oneday.ttf);
+   src: url(./fonts/oneday.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -111,10 +111,8 @@ p {
 
 @media (min-width: 700px) {
    .main-grid {
-      grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 500px)) minmax(
-            1em,
-            1fr
-         );
+      grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 500px)) minmax(1em,
+            1fr);
    }
 }
 
@@ -236,6 +234,7 @@ p {
 }
 
 @media (min-width: 700px) {
+
    .open-nav,
    .close-nav {
       display: none;
@@ -290,7 +289,7 @@ p {
    grid-column: 2 / -2;
 }
 
-.main-text > * {
+.main-text>* {
    margin-top: 2em;
 }
 

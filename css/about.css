@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: ONEDAY;
-    src: url(/fonts/oneday.ttf);
+    src: url(./fonts/oneday.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +84,7 @@ p {
 }
 
 @media (min-width: 700px) {
-    
+
     .section-title::after {
         content: "";
         display: block;
@@ -92,7 +92,7 @@ p {
         height: 2px;
         background: #000;
         margin-top: .3em;
-        margin-left: 0; 
+        margin-left: 0;
     }
 }
 
@@ -101,8 +101,7 @@ p {
     font-weight: 700;
 }
 
-.home
-p {
+.home p {
     color: antiquewhite;
 }
 
@@ -175,7 +174,7 @@ p {
 
 .logo-link {
     color: #fff;
-    font-family: ONEDAY, sans-serif;    
+    font-family: ONEDAY, sans-serif;
     padding: 1em .5em;
     text-decoration: none;
     letter-spacing: .3rem;
@@ -200,7 +199,7 @@ p {
 .nav-list {
     display: flex;
     list-style: none;
-    font-family: ONEDAY, sans-serif;  
+    font-family: ONEDAY, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -208,7 +207,7 @@ p {
     justify-content: space-around;
     flex-direction: column;
     text-transform: capitalize;
-    
+
 }
 
 .nav-link {
@@ -222,7 +221,7 @@ p {
 .nav-link:hover,
 .nav-link:focus {
     color: #bdbdbd;
-    
+
 }
 
 .close-nav {
@@ -251,6 +250,7 @@ p {
 }
 
 @media (min-width: 700px) {
+
     .open-nav,
     .close-nav {
         display: none;
@@ -299,7 +299,7 @@ p {
     .bg-img {
         height: 90vh;
     }
-    
+
 }
 
 /* ===================
@@ -310,11 +310,11 @@ p {
     grid-column: 2 / -2;
 }
 
-.main-text > * {
+.main-text>* {
     margin-top: 2em;
 }
 
-.main-text:last-child{
+.main-text:last-child {
     margin-bottom: 8em;
 }
 
@@ -361,4 +361,3 @@ footer {
         margin-top: 2em;
     }
 }
-
