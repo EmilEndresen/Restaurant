@@ -271,7 +271,7 @@ p {
 =====================*/
 
 .bg-img {
-   background-image: url(./images/hero-image.jpg);
+   background-image: url(../images/hero-image.jpg);
    background-color: #404040;
    background-size: cover;
    background-position: center;
